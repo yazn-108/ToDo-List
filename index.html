@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#009688">
+    <title>ToDo List</title>
+    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="container">
+        <div class="add-task">
+            <form action="">
+                <input type="text" placeholder="enter your tasks">
+                <button class="plus">
+                    <i class="fa-solid fa-plus"></i>
+                </button>
+            </form>
+        </div>
+        <div class="tasks">
+            <div class="no-tasks">no tasks to show</div>
+        </div>
+    </div>
+    <div class="task-stats">
+        <div class="tasks-count" style="--color:#E91E63;">
+            tasks <span>0</span>
+        </div>
+        <div class="completed-tasks" style="--color:#03A9F4;">
+            completed <span>0</span>
+        </div>
+    </div>
+    <div class="task-stats">
+        <button class="delete-tasks" style="--color:#E91E63;">Delete</button>
+        <button class="delete-completed" style="--color:#03A9F4;">Delete</button>
+    </div>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="js/script.js" type="module"></script>
+</body>
+</html>
