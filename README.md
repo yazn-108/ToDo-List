@@ -1,2 +1,2 @@
 # ToDo-List
-ToDo list project using Javascript
+ToDo list creation course: https://youtu.be/tGW3hPQczQA
