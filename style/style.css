@@ -19,7 +19,7 @@ button{
     outline: none;
     cursor: var(--cursor);}
 .container{
-    width: 50%;
+    width: 80%;
     border-radius: 10px;
     overflow: hidden;
     background-color: #f6f6f6;}
@@ -87,7 +87,7 @@ button{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 50%;
+    width: 80%;
     padding: 15px;
     font-size: 12px;}
 .task-stats span{
