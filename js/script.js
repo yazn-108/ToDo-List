@@ -99,7 +99,11 @@ deleteTasks.addEventListener("click",() => {
 let deleteCompleted = document.querySelector(".delete-completed");
 deleteCompleted.addEventListener("click",() => {
     let allCompleted = document.querySelectorAll(".tasks .task-box .finished");
-    allCompleted.forEach((e,i)=>{
+    allCompleted.forEach((e)=>{
+        let tasksArray = JSON.parse(localStorage.getItem("tasks"));
+        let filter = tasksArray.filter(item =>{return item.completed === false})
+        let updatedTasks = JSON.stringify(filter);
+        localStorage.setItem("tasks", updatedTasks);
         e.parentElement.remove();
         tasksCount.innerHTML = tasks.childElementCount;
         if(tasks.childElementCount === 0){
